@@ -78,7 +78,7 @@
             <div class="col-lg-12 mb-4 pb-2" style="margin-bottom: 10px;">
               <div class="form-group">
                 <label for="loan_repayment" class="form-label">Pseudo</label>
-                <input type="number" class="form-control shadow-none" id="loan_repayment" disabled placeholder="Comment souhaitez-vous qu'on vous appelle ">
+                <input type="text" class="form-control shadow-none" id="loan_repayment"  placeholder="Comment souhaitez-vous qu'on vous appelle " required>
               </div>
             </div>
             <div class="col-lg-12 mb-4 pb-2">
@@ -188,7 +188,7 @@
               <p>Si vous souhaitez etre assisté, veuillez laisser votre contact</p>
               <div class="form-group">
                 <label for="loan_repayment" class="form-label">Numéro de téléphone avec indicatif du pays</label>
-                <input type="number" class="form-control shadow-none" id="loan_repayment" disabled placeholder="Exemple: (+237) 660134413 ">
+                <input type="number" class="form-control shadow-none" id="loan_repayment"  placeholder="Exemple: (+237) 660134413 ">
               </div>
             </div>
             <div class="col-lg-12 mb-4 pb-2">
@@ -222,138 +222,90 @@
           <div class="row">
             <div class="col-lg-6 mb-4 pb-2">
               <div class="form-group">
-                <label for="loan_full_name" class="form-label">Ville</label>
-                <input type="text" class="form-control shadow-none" id="loan_ville" placeholder="Ville de résidence">
+                <label for="loan_full_name" class="form-label">Nom / Family Name</label>
+                <input type="text" class="form-control shadow-none" id="loan_ville" placeholder="Veuillez saisir votre nom">
               </div>
             </div>
-            <div class="col-lg-6 mb-4 pb-2" style="margin-top: -32px;">
+            <div class="col-lg-6 mb-4 pb-2">
               <div class="form-group">
-                <label for="loan_email_address" class="form-label" >Pays</label>
-                <input type="text" class="form-control shadow-none" id="loan_pays" placeholder="Pays de résidence">
+                <label for="loan_email_address" class="form-label" >Prénoms / First Name</label>
+                <input type="text" class="form-control shadow-none" id="loan_pays" placeholder="Veuillez saisir votre prénom">
               </div>
             </div>
-            <div class="col-lg-12 mb-4 pb-2">
-              <div class="d-md-flex justify-content-start align-items-center mb-4 py-2" style="margin-bottom: 0.5rem;">
-
-                <h6 class="mb-0 me-4">Sexe / Genre : </h6>
-
-                <div class="form-check form-check-inline mb-0 me-4">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                    value="option1" />
-                  <label class="form-check-label" for="femaleGender">Feminin</label>
-                </div>
-
-                <div class="form-check form-check-inline mb-0 me-4">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                    value="option2" />
-                  <label class="form-check-label" for="maleGender">Masculin</label>
-                </div>
-
-                <div class="form-check form-check-inline mb-0">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                    value="option3" />
-                  <label class="form-check-label" for="otherGender">Autres</label>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-6 mb-4 pb-2" style="margin-top: -32px;">
+              
+            <div class="col-lg-6 mb-4 pb-2">
               <div class="form-group">
                 <label for="loan_full_name" class="form-label">Ville</label>
                 <input type="text" class="form-control shadow-none" id="loan_ville" placeholder="Ville de résidence">
               </div>
             </div>
-            <div class="col-lg-6 mb-4 pb-2" style="margin-top: -32px;">
+            <div class="col-lg-6 mb-4 pb-2">
               <div class="form-group">
                 <label for="loan_email_address" class="form-label" >Pays</label>
                 <input type="text" class="form-control shadow-none" id="loan_pays" placeholder="Pays de résidence">
               </div>
             </div>
-
+             
             <div class="col-lg-12 mb-4 pb-2">
-              <p>Quel type de violence avez-vous subit ?</p>
+    
               <div class="form-group">
-                
-                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: -8px;"/> 
-                <label class=" " for="form2Example3" style="margin-left: 5px; background-color: none;">
-                  Agression physique </label><br>
-                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: 0px;"/> 
-                  <label class=" " for="form2Example3" style="margin-left: 5px; margin-top: 33px; background-color: none;">
-                    Agression sexuelle</label>
-                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: 30px; margin-left: -27px"/> 
-                  <label class=" " for="form2Example3" style="margin-left: 5px; margin-top: 64px; background-color: none;">
-                    Viol</label>
-                   <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: 60px; margin-left: -27px;"/> 
-                  <label class=" " for="form2Example3" style="margin-left: 5px; margin-top: 93px; background-color: none;">
-                    Mariage forcé  </label>
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: 92px; margin-left: -28px"/> 
-                  <label class=" " for="form2Example3" style="margin-left: 5px; margin-top: 124px; background-color: none;">
-                    Violences psychologiques / émotionnelles  </label>
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: 123px; margin-left: -27px"/> 
-                    <label class=" " for="form2Example3" style="margin-left: 5px; margin-top: 156px; background-color: none;">
-                      Déni de ressources, d’opportunités ou de services </label>
+                <label for="loan_repayment" class="form-label">Vous êtes / You are</label>
+                <select class="form-select form-control" aria-label="Default select example">
+                  <option selected class="form-select form-control">Sélectionner / Select</option>
+                  <option value="1">Une survivante de Violence Basées sur le Genre (VBG) / A survivor of Gender Based Violence (GBV)</option>
+                  <option value="2">Une institution internationale / An international institution</option>
+                  <option value="3">Une entreprise / A company</option>
+                  <option value="3">Un(e) professionnel des VBG et/ou de la santé mentale / A GBV and/or mental health professional</option>
+                  <option value="3">Un(e) activiste / An activist</option>
+                  <option value="3">Un(e) journaliste / A journalist</option>
+                  <option value="3">Un(e) blogueur(se) / A blogger</option>
+                  <option value="">Autres / Others</option>
+                  
+                </select>
               </div>
             </div>
             <div class="col-lg-12 mb-4 pb-2">
+    
               <div class="form-group">
-                <label for="loan_repayment" class="form-label">Racontez-nous ce qui s'est passé </label>
-                <textarea class="form-control" name="" id="" cols="38" rows="10" placeholder="Veuillez écrire votre histoire ici"></textarea>
-              
+               <P style="margin-top: -12px;"> Si vous êtes une association, ONG, institution ou entreprise, veuillez indiquer le nom de l'organisation pour laquelle vous participez. If you are an association, NGO, institution or company, please indicate the name of the organization for which you are participating.
+               </P>
+                <input type="text" class="form-control shadow-none" id="loan_pays" >
               </div>
             </div>
-
+            
             <div class="col-lg-12 mb-4 pb-2">
-              <p>De quel type d'aide avez-vous besoin ?</p>
-              <div class="form-group">
-                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: -8px;"/> 
-                <label class=" " for="form2Example3" style="margin-left: 5px; background-color: none;">
-                  Se confier / Reporter un cas</label><br>
-                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: 0px;"/> 
-                  <label class=" " for="form2Example3" style="margin-left: 5px; margin-top: 33px; background-color: none;">
-                    Discuter avec un assistant  </label>
-                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: 30px; margin-left: -27px"/> 
-                  <label class=" " for="form2Example3" style="margin-left: 5px; margin-top: 64px; background-color: none;">
-                   Trouver des contacts d'assistance </label>
-                   <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: 60px; margin-left: -27px;"/> 
-                  <label class=" " for="form2Example3" style="margin-left: 5px; margin-top: 93px; background-color: none;">
-                    Avoir des informations sur les VBG </label>
-                  <!--  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: 92px; margin-left: -28px"/> 
-                  <label class=" " for="form2Example3" style="margin-left: 5px; margin-top: 124px; background-color: none;">
-                    I  </label>
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: 123px; margin-left: -27px"/> 
-                    <label class=" " for="form2Example3" style="margin-left: 5px; margin-top: 156px; background-color: none;">
-                      I  </label>-->
-              
-              </div>
-            </div>
-            <div class="col-lg-12 mb-4 pb-2">
-              <p>Veuillez décrire concrètement l'assistance que vous souhaitez recevoir</p>
-              <div class="form-group">
-               
-                <textarea class="form-control" name="" id="" cols="38" rows="10" placeholder="Veuillez écrire votre histoire ici"></textarea>
-              
-              </div>
-            </div>
-            <div class="col-lg-12 mb-4 pb-2">
-              <p>Si vous souhaitez etre assisté, veuillez laisser votre contact</p>
+              <p style="margin-top: -12px;">Votre numéro de téléphone (Appel) / Your phone number (Call) *</p>
               <div class="form-group">
                 <label for="loan_repayment" class="form-label">Numéro de téléphone avec indicatif du pays</label>
-                <input type="number" class="form-control shadow-none" id="loan_repayment" disabled placeholder="Exemple: (+237) 660134413 ">
+                <input type="number" class="form-control shadow-none" id="loan_repayment"  placeholder="Exemple: (+237) 660134413 ">
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4 pb-2">
+              <p style="margin-top: -12px;">Votre numéro de téléphone (WhatsApp) / Your phone number (WhatsApp) *</span>
+              <div class="form-group">
+                <label for="loan_repayment" class="form-label">Numéro de téléphone avec indicatif du pays</label>
+                <input type="number" class="form-control shadow-none" id="loan_repayment" placeholder="Exemple: (+237) 660134413 ">
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4 pb-2">
+             
+              <div class="form-group">
+                <label for="loan_repayment" class="form-label">Votre adresse e-mail / Your e-mail address</label>
+                <input type="email" class="form-control shadow-none" id="loan_repayment" placeholder="Exemple: (+237) 660134413 ">
               </div>
             </div>
             <div class="col-lg-12 mb-4 pb-2">
               <div class="form-group">
                 <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" style="margin-top: -8px;"/> 
                 <label class=" " for="form2Example3" style="margin-left: 5px; background-color: none;">
-                  Je conscent donner mes informations à AlertGBV pour le suivi des cas</label><br>
+                  J'accepte les <a href="#">termes et conditions d'utilisations</a> </label><br>
               </div>
             </div>
 
 
             
             <div class="col-lg-12">
-              <button type="submit" class="btn btn-primary w-100" style="background-color: #F3904C; color:white">Enregistrer</button>
+              <button type="submit" class="btn btn-primary w-100" style="background-color: #F3904C; color:white">S'Enregistrer</button>
             </div>
           </div>
         </form>
